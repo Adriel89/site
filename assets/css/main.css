@@ -2542,13 +2542,20 @@ textarea:focus {
   padding-left: 0;
   padding-right: 0;
 }
-/* Correção para o portfólio em telas pequenas */
+/* CORREÇÃO: Foto de perfil no celular */
 @media screen and (max-width: 736px) {
-  #portfolio .box.style2 .image.featured {
-    position: static; /* Reseta a posição */
-    margin: 0 0 1.5em 0; /* Remove a margem negativa */
-    left: auto;
-    top: auto;
+  #top .image {
+    width: 12em; /* Reduz um pouco o tamanho para ficar mais proporcional */
+    height: 12em;
+    margin: 0 auto 2em auto; /* Centraliza a imagem e adiciona uma margem inferior */
+  }
+
+  #top .col-8.col-7-large.col-12-medium {
+    text-align: center; /* Centraliza o texto para combinar com a imagem */
+  }
+
+  #top p {
+    text-align: justify; /* Mantém o parágrafo justificado se preferir */
   }
 }
 
