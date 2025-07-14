@@ -2559,3 +2559,14 @@ textarea:focus {
   }
 }
 
+/* CORREÇÃO: Imagens do portfólio no celular */
+@media screen and (max-width: 736px) {
+  #portfolio .box.style2 .image.featured {
+    position: static; /* Remove o posicionamento relativo */
+    margin: 0 0 1.5em 0; /* Zera as margens problemáticas e adiciona um espaço abaixo */
+    left: auto;
+    top: auto;
+    width: 100%; /* Garante que a imagem ocupe a largura do card */
+  }
+}
+
