@@ -2542,4 +2542,13 @@ textarea:focus {
   padding-left: 0;
   padding-right: 0;
 }
+/* Correção para o portfólio em telas pequenas */
+@media screen and (max-width: 736px) {
+  #portfolio .box.style2 .image.featured {
+    position: static; /* Reseta a posição */
+    margin: 0 0 1.5em 0; /* Remove a margem negativa */
+    left: auto;
+    top: auto;
+  }
+}
 
