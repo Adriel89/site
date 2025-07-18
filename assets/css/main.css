@@ -2327,6 +2327,7 @@ input, select, textarea {
 			hr {
 				margin: 1.5em 0 2em 0;
 			}
+			
 
 		/* Section/Article */
 
@@ -2456,9 +2457,10 @@ input, select, textarea {
 			}
 
 				#top .image {
-					width: 15em;
-					height: 15em;
-					margin-bottom: 0;
+					width: 100%;             /* Permite que a imagem ocupe toda a largura da coluna */
+					max-width: 18em;         /* Define um tamanho máximo para não ficar gigante */
+					height: auto;            /* Deixa a altura se ajustar para manter a proporção */
+					margin: 0 auto 2em auto; /* Centraliza (0 auto) e adiciona um bom espaço abaixo (2em) */
 				}
 
 				#top p {
@@ -2490,83 +2492,4 @@ input, select, textarea {
 
 	}
 
-	/* Estiliza todos os inputs e textarea para ficarem iguais */
-input[type="text"],
-input[type="email"],
-textarea {
-  background-color: #222; /* fundo escuro, igual ao da página */
-  color: #eee; /* texto claro */
-  border: 1px solid #444; /* borda suave */
-  border-radius: 5px;
-  padding: 10px;
-  width: 100%; /* ocupa toda a largura da coluna */
-  box-sizing: border-box; /* inclui padding dentro da largura */
-  font-size: 1rem;
-  transition: background-color 0.3s ease, border-color 0.3s ease;
-}
-
-/* Quando o campo estiver focado, muda a borda e fundo */
-input[type="text"]:focus,
-input[type="email"]:focus,
-textarea:focus {
-  background-color: #333;
-  border-color: #2a9df4; /* azul suave */
-  outline: none;
-}
-
-/* Botões com largura total e alinhados */
-.button.primary {
-  width: 100%;
-  max-width: 400px; /* opcional, para limitar largura máxima */
-  margin: 10px auto; /* centraliza horizontalmente com espaçamento */
-  display: block;
-  font-weight: bold;
-}
-
-/* Botão LinkedIn com mesmo tamanho e alinhamento */
-.button.brands.fa-linkedin-in {
-  width: 100%;
-  max-width: 400px;
-  margin: 10px auto 0 auto; /* margem só em cima */
-  display: block;
-}
-
-/* Ajusta o container para centralizar tudo */
-.container.medium {
-  max-width: 500px;
-  margin: 0 auto;
-}
-
-/* Ajusta as colunas para ocupar toda largura dentro do container */
-.col-6, .col-12 {
-  padding-left: 0;
-  padding-right: 0;
-}
-/* CORREÇÃO: Foto de perfil no celular */
-@media screen and (max-width: 736px) {
-  #top .image {
-    width: 12em; /* Reduz um pouco o tamanho para ficar mais proporcional */
-    height: 12em;
-    margin: 0 auto 2em auto; /* Centraliza a imagem e adiciona uma margem inferior */
-  }
-
-  #top .col-8.col-7-large.col-12-medium {
-    text-align: center; /* Centraliza o texto para combinar com a imagem */
-  }
-
-  #top p {
-    text-align: justify; /* Mantém o parágrafo justificado se preferir */
-  }
-}
-
-/* CORREÇÃO: Imagens do portfólio no celular */
-@media screen and (max-width: 736px) {
-  #portfolio .box.style2 .image.featured {
-    position: static; /* Remove o posicionamento relativo */
-    margin: 0 0 1.5em 0; /* Zera as margens problemáticas e adiciona um espaço abaixo */
-    left: auto;
-    top: auto;
-    width: 100%; /* Garante que a imagem ocupe a largura do card */
-  }
-}
-
+	
