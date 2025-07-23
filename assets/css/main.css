@@ -2170,7 +2170,7 @@ input, select, textarea {
 			margin-top: 0.35em;
 		}
 
-		#top p {
+		#top .intro-text {
 			font-size: 1.5em;
 			line-height: 1.75em;
 		}
@@ -2492,4 +2492,102 @@ input, select, textarea {
 
 	}
 
-	
+	/* ======================================================= */
+/* ====== CORREÇÕES PERSONALIZADAS - SEÇÃO DE INÍCIO ====== */
+/* ======================================================= */
+
+/* 1. Estilo da Imagem de Perfil (Círculo Moderno) */
+#top .image.profile {
+    border-radius: 50%; /* Transforma a imagem em um círculo perfeito */
+    max-width: 18em; /* Define um tamanho máximo para a imagem */
+    margin: 0 auto; /* Centraliza a imagem na coluna */
+    
+}
+
+#top .image.profile img {
+    border-radius: 50%; /* Garante que a imagem dentro do span também seja circular */
+}
+
+/* 2. Ajustes de Texto e Legibilidade */
+#top .content-column {
+    text-align: left; /* Alinha todo o texto à esquerda para melhor leitura */
+}
+
+#top h1 {
+    font-size: 2.8em; /* Aumenta um pouco o nome para dar mais destaque */
+    line-height: 1.2;
+    margin-bottom: 0.1em;
+}
+
+#top .subtitle {
+    font-size: 1.25em; /* Define um tamanho para o subtítulo */
+    color: #6c7a89; /* Cor mais suave para o subtítulo */
+    font-weight: 600;
+    margin-bottom: 1.5em; /* Espaçamento abaixo do subtítulo */
+    line-height: 1.5;
+}
+
+#top p {
+    line-height: 1.7; /* Aumenta o espaçamento entre linhas dos parágrafos */
+    color: #555; /* Escurece um pouco o texto para melhor contraste */
+}
+
+/* 3. Lista de Serviços Personalizada com Ícones */
+.services-list {
+    list-style: none; /* Remove os marcadores de bolinha padrão */
+    padding-left: 0;
+    margin-bottom: 2em; /* Espaçamento abaixo da lista */
+}
+
+.services-list li {
+    padding-left: 1.5em; /* Espaço para o ícone */
+    position: relative;
+    margin-bottom: 0.5em;
+    line-height: 1.6;
+    color: #555;
+}
+
+.services-list li::before {
+    content: '\f00c'; /* Código do ícone de check do Font Awesome */
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900; /* Usa a versão sólida do ícone */
+    color: #43B3E0; /* Cor do ícone, a mesma do botão */
+    position: absolute;
+    left: 0;
+    top: 5px;
+}
+
+
+
+/* 5. Ajustes de Responsividade para Celulares */
+@media screen and (max-width: 980px) {
+    #top .content-column {
+        text-align: center; /* Centraliza o texto em telas médias */
+    }
+
+    #top .services-list {
+        display: inline-block; /* Faz a lista se comportar como um bloco centralizado */
+        text-align: left; /* Mantém o texto da lista alinhado à esquerda */
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media screen and (max-width: 736px) {
+    #top .content-column {
+        text-align: center; /* Garante a centralização em telas pequenas */
+    }
+
+    #top .image.profile {
+        max-width: 12em; /* Diminui a imagem no celular */
+        margin-bottom: 2em; /* Aumenta o espaço abaixo da imagem */
+    }
+
+    #top h1 {
+        font-size: 2.2em; /* Ajusta o tamanho do título para celular */
+    }
+}
+
+
+
+
