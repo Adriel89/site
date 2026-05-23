@@ -6,53 +6,129 @@
 -->
 <html lang="pt-br">
 	<head>
-		<title>Adriel Lucena - Engenheiro Florestal | Consultoria e Licenciamento Ambiental</title>
+		<title>Adriel Lucena | Especialista em Regularização e Licenciamento Ambiental</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
-		<meta name="description" content="Engenheiro Florestal especializado em licenciamento ambiental, CAR, PRAD e regularização de imóveis rurais. Soluções técnicas e seguras para o seu empreendimento.">
-        <!-- WhatsApp Floating Button Style -->
+		<meta name="description" content="Consultoria ambiental especializada em CAR, Georreferenciamento, Supressão de Vegetação e Licenciamento. Proteja sua terra e evite multas.">
+        
         <style>
+            /* Modernização de Cores e Estética */
+            :root {
+                --primary-green: #2d5a27;
+                --accent-green: #25d366;
+                --dark-bg: #1a1a1a;
+                --light-gray: #f8f9fa;
+            }
+
+            body { font-family: 'Inter', sans-serif; }
+
+            /* Botão WhatsApp Flutuante Modernizado */
             .whatsapp-float {
                 position: fixed;
-                width: 60px;
-                height: 60px;
-                bottom: 40px;
-                right: 40px;
-                background-color: #25d366;
+                width: 65px;
+                height: 65px;
+                bottom: 30px;
+                right: 30px;
+                background-color: var(--accent-green);
                 color: #FFF;
-                border-radius: 50px;
+                border-radius: 50%;
                 text-align: center;
                 font-size: 30px;
-                box-shadow: 2px 2px 3px #999;
+                box-shadow: 0 10px 25px rgba(37, 211, 102, 0.4);
                 z-index: 1000;
                 display: flex;
                 align-items: center;
                 justify-content: center;
                 text-decoration: none;
-                transition: all 0.3s ease;
+                transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
             }
             .whatsapp-float:hover {
+                transform: scale(1.1) rotate(10deg);
                 background-color: #128c7e;
-                transform: scale(1.1);
             }
+
+            /* Hero Section Transformação */
+            .hero-text {
+                font-size: 1.1em;
+                line-height: 1.6;
+                margin-bottom: 25px;
+                color: #555;
+            }
+            .hero-headline {
+                font-size: 2.8em !important;
+                line-height: 1.1 !important;
+                margin-bottom: 20px !important;
+                color: var(--primary-green) !important;
+            }
+
+            /* Cards de Serviços Modernos */
+            .service-card {
+                background: white;
+                padding: 30px;
+                border-radius: 15px;
+                border: 1px solid #eee;
+                transition: all 0.3s ease;
+                height: 100%;
+                box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+            }
+            .service-card:hover {
+                transform: translateY(-10px);
+                box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+                border-color: var(--accent-green);
+            }
+            .service-card h3 {
+                color: var(--primary-green);
+                font-size: 1.4em;
+                margin-bottom: 15px;
+            }
+
+            /* Seção de Diferenciais */
+            .diff-item {
+                display: flex;
+                align-items: center;
+                margin-bottom: 20px;
+                font-size: 1.1em;
+            }
+            .diff-icon {
+                color: var(--accent-green);
+                margin-right: 15px;
+                font-size: 1.5em;
+            }
+
+            /* Botões de Conversão */
+            .button-cta {
+                background-color: var(--primary-green) !important;
+                border-radius: 50px !important;
+                padding: 15px 35px !important;
+                font-weight: bold !important;
+                transition: all 0.3s ease !important;
+                text-transform: uppercase;
+                letter-spacing: 1px;
+            }
+            .button-cta:hover {
+                background-color: var(--accent-green) !important;
+                transform: scale(1.05);
+            }
+
+            /* Ajuste de Layout */
+            .wrapper.style1 { background: linear-gradient(135deg, #fdfdfd 0%, #eef5ee 100%); }
         </style>
 	</head>
 	<body class="is-preload">
 
 		<!-- WhatsApp Button -->
-		<a href="https://wa.me/5584999999999" class="whatsapp-float" target="_blank" rel="noopener noreferrer" title="Fale comigo no WhatsApp">
-            <span class="icon solid fa-whatsapp" style="font-size: 30px;"></span>
-            <!-- Nota: O ícone depende do FontAwesome estar carregado no main.css -->
+		<a href="https://wa.me/5584999999999" class="whatsapp-float" target="_blank" rel="noopener noreferrer" title="Consultoria Imediata">
+            <span class="icon solid fa-whatsapp"></span>
         </a>
 
 		<!-- Nav -->
 			<nav id="nav">
 				<ul class="container">
 					<li><a href="#top">Início</a></li>
-					<li><a href="#work">Serviços</a></li>
-					<li><a href="#portfolio">Portfólio</a></li>
-					<li><a href="#Blog">Blog</a></li>
+					<li><a href="#work">Soluções</a></li>
+					<li><a href="#portfolio">Casos de Sucesso</a></li>
+					<li><a href="#Blog">Conhecimento</a></li>
 					<li><a href="#contact">Contato</a></li>
 				</ul>
 			</nav>
@@ -63,27 +139,31 @@
     <div class="container">
         <div class="row">
             <div class="col-4 col-5-large col-12-medium">
-                <span class="image fit profile"><img src="images/IMG_20170519_143614528.jpg" alt="Foto de Adriel Lucena"/></span>
+                <span class="image fit profile"><img src="images/IMG_20170519_143614528.jpg" alt="Adriel Lucena - Especialista Ambiental"/></span>
             </div>
             <div class="col-8 col-7-large col-12-medium">
                 <header>
-                    <h1><strong>Adriel Lucena</strong></h1>
+                    <h1 class="hero-headline"><strong>Regularize sua Terra e Proteja seu Patrimônio.</strong></h1>
                     <p class="subtitle">Engenheiro Florestal | Especialista em Licenciamento e Regularização Ambiental</p>
                 </header>
-                <p class="intro-text">Ofereço assessoria técnica especializada para a regularização de imóveis rurais, atendendo pessoas físicas e jurídicas. Meu foco é garantir que seu empreendimento esteja em total conformidade com as normas ambientais, evitando multas e promovendo o desenvolvimento sustentável.</p>
+                <p class="hero-text">
+                    Evite multas ambientais, resolva pendências fundiárias e libere o acesso a créditos agrícolas. 
+                    Ofereço assessoria técnica de alta precisão para que você possa focar no crescimento do seu negócio, enquanto eu cuido de toda a burocracia e conformidade legal.
+                </p>
 
-                <p class="intro-text"><strong>Minha atuação estratégica abrange:</strong></p>
-                <ul class="services-list">
-                    <li>Autorizações ambientais para Uso Alternativo do Solo e PRAD.</li>
-                    <li>Inventário Florestal e Elaboração de Relatórios Técnicos.</li>
-                    <li>Cadastro Ambiental Rural (CAR) e regularização de passivos.</li>
-                    <li>Regularização Fundiária e Ambiental de imóveis rurais.</li>
-                </ul>
+                <div class="diff-item">
+                    <span class="diff-icon">✓</span> <span>Precisão centimétrica com tecnologia RTK.</span>
+                </div>
+                <div class="diff-item">
+                    <span class="diff-icon">✓</span> <span>Experiência real em campo e processos administrativos.</span>
+                </div>
+                <div class="diff-item">
+                    <span class="diff-icon">✓</span> <span>Foco em resultados: agilidade na obtenção de licenças.</span>
+                </div>
 
-				<footer style="margin-top: 20px;">
-					<a href="#work" class="button large scrolly">Conheça meus serviços</a>
+				<footer style="margin-top: 30px;">
+					<a href="#work" class="button large scrolly button-cta">Ver Soluções para meu Imóvel</a>
 				</footer>
-                
             </div>
         </div>
     </div>
@@ -93,35 +173,35 @@
 			<article id="work" class="wrapper style2">
 				<div class="container">
 					<header>
-						<h2>Serviços Especializados</h2>
-						<p>Soluções técnicas para gestão ambiental e florestal de empreendimentos rurais e urbanos.</p>
+						<h2 style="font-size: 2.2em;">Soluções Estratégicas</h2>
+						<p>Não vendo apenas serviços técnicos, entrego segurança jurídica e tranquilidade para o produtor rural.</p>
 					</header>
 					<div class="row aln-center">
 						<div class="col-4 col-6-medium col-12-small">
-							<section class="box style1">
-								<span class="icon solid featured fa-tree"></span>
+							<section class="service-card">
+								<span class="icon solid featured fa-tree" style="color: var(--primary-green);"></span>
 								<h3>Licenciamento Ambiental</h3>
-								<p>Assessoria completa para obtenção de licenças e autorizações ambientais, agilizando a legalização do seu negócio.</p>
+								<p>Remova a burocracia do seu caminho. Assessoria completa para obtenção de licenças e autorizações, garantindo a legalidade da sua operação.</p>
 							</section>
 						</div>
 						<div class="col-4 col-6-medium col-12-small">
-							<section class="box style1">
-								<span class="icon solid featured fa-map"></span>
+							<section class="service-card">
+								<span class="icon solid featured fa-map" style="color: var(--primary-green);"></span>
 								<h3>Regularização de Imóveis</h3>
-								<p>Regularização fundiária e ambiental, Cadastro Ambiental Rural (CAR) e suporte em processos de desembargo.</p>
+								<p>CAR, Georreferenciamento e suporte em desembargos. Transformamos a posse em propriedade legalmente segura e valorizada.</p>
 							</section>
 						</div>
 						<div class="col-4 col-6-medium col-12-small">
-							<section class="box style1">
-								<span class="icon solid featured fa-leaf"></span>
+							<section class="service-card">
+								<span class="icon solid featured fa-leaf" style="color: var(--primary-green);"></span>
 								<h3>Projetos Florestais</h3>
-								<p>Elaboração e acompanhamento de Projetos de Recuperação de Áreas Degradadas (PRAD) e Reposição Florestal.</p>
+								<p>PRAD e Reposição Florestal com rigor técnico. Recuperamos áreas degradadas transformando obrigações em ativos ambientais.</p>
 							</section>
 						</div>
 					</div>
-					<footer style="text-align: center; margin-top: 40px;">
-						<p>Precisa de ajuda com a regularização ambiental do seu empreendimento?</p>
-						<a href="#contact" class="button large scrolly">Solicitar Orçamento</a>
+					<footer style="text-align: center; margin-top: 50px;">
+						<p style="font-size: 1.2em; margin-bottom: 20px;">Sente que sua propriedade corre riscos ou está travada por falta de documentos?</p>
+						<a href="#contact" class="button large scrolly button-cta">Solicitar Análise de Risco Gratuita</a>
 					</footer>
 				</div>
 			</article>
@@ -130,8 +210,8 @@
 			<article id="portfolio" class="wrapper style3">
 				<div class="container">
 					<header>
-						<h2>Trabalhos Recentes</h2>
-						<p>Projetos de impacto e resultados entregues.</p>
+						<h2 style="font-size: 2.2em;">Casos de Sucesso</h2>
+						<p>Resultados reais entregues para produtores e empreendimentos.</p>
 					</header>
 					<div class="row">
 						<div class="col-4 col-6-medium col-12-small">
@@ -163,8 +243,8 @@
 <article id="Blog" class="wrapper style2">
     <div class="container">
         <header>
-            <h2>Blog Técnico</h2>
-            <p>Conhecimentos e novidades sobre gestão ambiental, licenciamento e regularização.</p>
+            <h2 style="font-size: 2.2em;">Hub de Conhecimento</h2>
+            <p>Informações essenciais para o produtor rural não perder dinheiro nem terra.</p>
         </header>
         <div class="row">
 
@@ -186,8 +266,8 @@
 
         </div>
         <footer style="text-align: center; margin-top: 40px;">
-            <p>Gostou do conteúdo e quer saber mais sobre a regularização da sua área?</p>
-            <a href="#contact" class="button large scrolly">Falar com Especialista</a>
+            <p>Dúvida sobre a legalidade da sua área?</p>
+            <a href="#contact" class="button large scrolly button-cta">Consultar Especialista</a>
         </footer>
     </div>
 </article>
@@ -196,8 +276,8 @@
 <article id="contact" class="wrapper style4">
   <div class="container medium">
     <header>
-      <h2>Entre em contato</h2>
-      <p>Tire suas dúvidas ou solicite um orçamento para seu projeto.</p>
+      <h2 style="font-size: 2.2em;">Solicite sua Análise Técnica</h2>
+      <p>Preencha os dados abaixo e eu entrarei em contato para entender a situação do seu imóvel.</p>
     </header>
     <div class="row" style="display: flex; justify-content: center; flex-wrap: wrap;">
       <div class="col-12 col-12-small">
@@ -208,16 +288,16 @@
 
           <div class="row gtr-50">
             <div class="col-6 col-12-small">
-              <input type="text" name="name" placeholder="Seu nome" required />
+              <input type="text" name="name" placeholder="Seu nome completo" required />
             </div>
             <div class="col-6 col-12-small">
               <input type="email" name="email" placeholder="Seu e-mail" required />
             </div>
             <div class="col-12">
-              <textarea name="message" placeholder="Descreva a sua necessidade ambiental..." rows="6" required></textarea>
+              <textarea name="message" placeholder="Conte-me brevemente sobre a sua propriedade e qual a sua principal dúvida ou necessidade..." rows="6" required></textarea>
             </div>
             <div class="col-12" style="text-align: center;">
-              <input type="submit" value="Enviar Solicitação" class="button primary" />
+              <input type="submit" value="Enviar Solicitação de Orçamento" class="button primary button-cta" />
             </div>
           </div>
         </form>
